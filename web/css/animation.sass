@@ -1,0 +1,236 @@
+@import "mixin"
+
++keyframes(bounceLogo)
+  0%
+    opacity: 0
+    -webkit-transform: translateY(2000px)
+  60%
+    opacity: 1
+    -webkit-transform: translateY(-30px)
+  80%
+    -webkit-transform: translateY(10px)
+  100%
+    -webkit-transform: translateY(0)
+
+
++keyframes(bounceLeftShrimp)
+  0%
+    opacity: 0
+    -webkit-transform: translateX(-2000px)
+  60%
+    opacity: 1
+    -webkit-transform: translateX(30px)
+  80%
+    -webkit-transform: translateX(-10px)
+  100%
+    -webkit-transform: translateX(0)
+
+
++keyframes(bounceRightShrimp)
+  0%
+    opacity: 0
+    -webkit-transform: translateX(2000px)
+  60%
+    opacity: 1
+    -webkit-transform: translateX(-30px)
+  80%
+    -webkit-transform: translateX(10px)
+  100%
+    -webkit-transform: translateX(0)
+
+
++keyframes(superPanLabel)
+  0%
+    visibility: visible
+    width: 0
+  100%
+    visibility: visible
+    width: 100%
+
+
++keyframes(captionHide)
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+
++keyframes(ingridients-shrimps)
+  0%
+    visibility: visible
+    opacity: 0
+    -webkit-transform: scale(5) rotate(0deg)
+  10%
+    opacity: 0.1
+  25%
+    visibility: visible
+  50%
+    visibility: visible
+  75%
+    visibility: visible
+  100%
+    visibility: visible
+    opacity: 1
+    -webkit-transform: scale(0.15) rotate(360deg)
+
+
++keyframes(ingridients-eggs)
+  0%
+    visibility: visible
+    opacity: 0
+    -webkit-transform: scale(4) rotate(0deg)
+  10%
+    opacity: 0.1
+  25%
+    visibility: visible
+  //opacity: 1
+  //-webkit-transform: scale(1) rotate(360deg)
+  50%
+    visibility: visible
+  //-webkit-transform: scale(1) rotate(900deg)
+  75%
+    visibility: visible
+  100%
+    visibility: visible
+    opacity: 1
+    -webkit-transform: scale(0.15) rotate(-360deg)
+
+
+
++keyframes(ingridients-salads)
+  0%
+    visibility: visible
+    opacity: 0
+    -webkit-transform: scale(3) rotate(0deg)
+  10%
+    visibility: visible
+    opacity: 0.1
+  100%
+    visibility: visible
+    opacity: 1
+    -webkit-transform: scale(0.15) rotate(360deg)
+
++keyframes(pizza)
+  0%
+    transform: scale(1)
+    -webkit-transform: scale(1)
+    opacity: 0
+    visibility: visible
+  100%
+    transform: scale(0.8) translate3d(0, 50px, 0)
+    -webkit-transform: scale(0.8) translate3d(0, 50px, 0)
+    visibility: visible
+    opacity: 1
+
+
++keyframes(cloth)
+  0%
+    transform: scale(1)
+    -webkit-transform: scale(1)
+    opacity: 0
+    visibility: visible
+  100%
+    transform: scale(0.8) translate3d(0, 50px, 0)
+    -webkit-transform: scale(0.8) translate3d(0, 50px, 0)
+    visibility: visible
+    opacity: 1
+
+
++keyframes(fadeIn)
+  0%
+    opacity: 0
+    visibility: visible
+  100%
+    opacity: 1
+    visibility: visible
+
++keyframes(fadeOut)
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+    visibility: hidden
+
++keyframes(bounceInDown)
+  0%, 60%, 75%, 90%, 100%
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(0, -3000px, 0)
+    transform: translate3d(0, -3000px, 0)
+  60%
+    opacity: 1
+    -webkit-transform: translate3d(0, 25px, 0)
+    transform: translate3d(0, 25px, 0)
+  75%
+    -webkit-transform: translate3d(0, -10px, 0)
+    transform: translate3d(0, -10px, 0)
+  90%
+    -webkit-transform: translate3d(0, 5px, 0)
+    transform: translate3d(0, 5px, 0)
+  100%
+    visibility: visible
+    -webkit-transform: none
+    transform: none
+
+
++keyframes(flipInY)
+  0%
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg)
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg)
+    -webkit-animation-timing-function: ease-in
+    animation-timing-function: ease-in
+    opacity: 0
+    visibility: visible
+  40%
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg)
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg)
+    -webkit-animation-timing-function: ease-in
+    animation-timing-function: ease-in
+  60%
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg)
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg)
+    opacity: 1
+  80%
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg)
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg)
+  100%
+    visibility: visible
+    -webkit-transform: perspective(400px)
+    transform: perspective(400px)
+
+
++keyframes(bounceOutUp)
+  20%
+    -webkit-transform: translate3d(0, -10px, 0)
+    transform: translate3d(0, -10px, 0)
+  40%, 45%
+    -webkit-transform: translate3d(0, 20px, 0)
+    transform: translate3d(0, 20px, 0)
+  100%
+    -webkit-transform: translate3d(0, -2000px, 0)
+    transform: translate3d(0, -2000px, 0)
+
++keyframes(bounceInDownLogo)
+  0%, 60%, 75%, 90%, 100%
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000)
+  0%
+    opacity: 0
+    -webkit-transform: translate3d(0, -3000px, 0)
+    transform: translate3d(0, -3000px, 0)
+  60%
+    opacity: 1
+    -webkit-transform: translate3d(0, 25px, 0)
+    transform: translate3d(0, 25px, 0)
+  75%
+    -webkit-transform: translate3d(0, -10px, 0)
+    transform: translate3d(0, -10px, 0)
+  90%
+    -webkit-transform: translate3d(0, 5px, 0)
+    transform: translate3d(0, 5px, 0)
+  100%
+    visibility: visible
+    -webkit-transform: none
+    transform: none

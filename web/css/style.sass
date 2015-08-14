@@ -1,0 +1,260 @@
+@import "mixin"
+@import "reset"
+@import "fonts.css"
+
+#rma-widget
+  font-family: "AvenirLTStd-Black", sans-serif
+  background: url("../img/bgrd.jpg")
+span
+  display: block
+.visible
+  visibility: visible !important
+
+.overflow
+  width: 100%
+  height: 100%
+  overflow: hidden
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1000
+  text-decoration: none
+.pizza_hut_logo
+  width: 113px
+  height: 23px
+  background: url("../img/pizza_hut_logo.png") no-repeat
+  position: absolute
+  top: 5px
+  left: 7px
+.halal_logo
+  width: 23px
+  height: 22px
+  background: url("../img/halal_logo.png") no-repeat
+  position: absolute
+  right: 8px
+  bottom: 5px
+
+//MAIN STYLES
+.ls-logo-slide
+  width: 150px
+  height: 108px
+  position: absolute
+  top: 105px
+  left: 80px
+  z-index: 50
+  display: block
+  background: url("../img/logo.png") no-repeat
+  visibility: hidden
+  +animation(bounceInDownLogo 3s 6.25s ease-in-out)
+  -webkit-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+
+
+
+.ls-box
+  width: 256px
+  height: 187px
+  position: relative
+  top: 145px
+  left: 33px
+  z-index: 150
+  +animation(bounceOutUp 2s 5.5s ease-in-out)
+  -webkit-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  .ls-text
+    width: 207px
+    height: 147px
+    background: url("../img/laksa_seadap.png") no-repeat
+    position: absolute
+    left: 33px
+    z-index: 120
+    +animation(bounceLogo 1.5s 1 ease-in-out)
+  .shrimp-left
+    width: 114px
+    height: 89px
+    background: url("../img/shrimp_left.png") no-repeat
+    position: absolute
+    left: 0
+    top: 58px
+    z-index: 114
+    +animation(bounceLeftShrimp 2.5s 1 ease-in-out)
+  .shrimp-right
+    width: 80px
+    height: 59px
+    background: url("../img/shrimp_right.png") no-repeat
+    position: absolute
+    right: 0
+    top: 0
+    +animation(bounceRightShrimp 3s 1 ease-in-out)
+  .super-pan-label
+    width: 228px
+    height: 52px
+    background: url("../img/super_pan_label.png") no-repeat
+    position: absolute
+    left: 22px
+    bottom: 0
+    z-index: 125
+    visibility: hidden
+    +animation(superPanLabel 0.5s 2.5s ease-in-out)
+    -webkit-animation-fill-mode: forwards
+    animation-fill-mode: forwards
+
+.caption
+  width: 263px
+  height: 88px
+  position: relative
+  top: -150px
+  left: 39px
+  color: #fff
+  font-size: 28px
+  visibility: hidden
+  +animation(bounceInDown 3s 6s ease-in-out)
+  -webkit-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+  .red-text
+    color: #e83325
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white
+    -webkit-text-stroke-width: 2px
+    -webkit-text-stroke-color: #fff
+  .get-your
+    font-size: 35px
+  .pizza-at
+    position: absolute
+    left: 53px
+  .two
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white
+    -webkit-text-stroke-width: 1px
+  .nd
+    font-size: 18px
+    position: absolute
+    top: 36px
+    left: 19px
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white
+    -webkit-text-stroke-width: 1px
+  .four
+    position: absolute
+    top: -18px
+    right: 16px
+    font: 100px "H.H.Samuel"
+  .dollar
+    position: absolute
+    top: -2px
+    right: 55px
+    font: 50px "H.H.Samuel"
+  .star
+    position: absolute
+    right: 0
+    top: 0
+
+.pizza
+  width: 287px
+  height: 312px
+  display: block
+  background: url("../img/pizza.png") no-repeat
+  position: absolute
+  visibility: hidden
+  top: 140px
+  left: 12px
+  z-index: 200
+  +animation(pizza 2s 5.5s ease-in-out)
+  -webkit-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+
+
+.cloth
+  width: 259px
+  height: 261px
+  background: url("../img/cloth.png") no-repeat
+  position: absolute
+  visibility: hidden
+  top: 120px
+  z-index: 0
+  left: 0
+  +animation(cloth 3s 6s ease-in)
+  -webkit-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+
+//ingridients
+.ing-shrimps
+  width: 104px
+  height: 102px
+  display: block
+  background: url("../img/ing_shrimps.png") no-repeat
+  position: absolute
+  top: 252px
+  left: 111px
+  visibility: hidden
+  +animation(ingridients-shrimps 4.5s 3s ease-in-out)
+.ing-eggs
+  width: 191px
+  height: 186px
+  display: block
+  background: url("../img/ing_eggs.png") no-repeat
+  position: absolute
+  top: 211px
+  left: 62px
+  visibility: hidden
+  +animation(ingridients-eggs 4s 3.7s ease-in-out)
+.ing-salads
+  width: 216px
+  height: 224px
+  background: url("../img/ing_salads.png") no-repeat
+  position: absolute
+  top: 185px
+  left: 56px
+  visibility: hidden
+  +animation(ingridients-salads 3.5s 4.4s ease-in-out)
+
+
+.order_now
+  width: 175px
+  height: 41px
+  text-decoration: none
+  background: #d22e2d
+  text-align: center
+  font-size: 17px
+  line-height: 41px
+  color: #fff
+  z-index: 200
+  position: absolute
+  top: 415px
+  left: 72px
+  border-radius: 7px
+  -webkit-border-radius: 7px
+  -moz-border-radius: 7px
+  -webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,0.5)
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.5)
+  visibility: hidden
+  +animation(flipInY 3s 6.5s ease-in)
+  -webkit-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+
+.refresh
+  width: 23px
+  height: 23px
+  display: block
+  background: url("../img/refresh.png") no-repeat
+  visibility: hidden
+  position: absolute
+  top: 5px
+  right: 40px
+  z-index: 9999
+  cursor: pointer
+  +animation(fadeIn 2s 7s ease-in-out)
+  -webkit-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+
+.tc
+  font-size: 9px
+  color: #000
+  position: absolute
+  bottom: 10px
+  left: 13px
+  visibility: hidden
+  +animation(fadeIn 2s 7s ease-in-out)
+  -webkit-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+
+
+//ANIMATION
+@import "animation"

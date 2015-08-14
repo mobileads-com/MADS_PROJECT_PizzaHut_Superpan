@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'AvenirLTStd-Black';
+	src: url('http://rmarepo.richmediaads.com/2754/pizzahut2/css/fonts/AvenirLTStd-Black.eot');
+	src: url('http://rmarepo.richmediaads.com/2754/pizzahut2/css/fonts/AvenirLTStd-Black.woff') format('woff'), url('http://rmarepo.richmediaads.com/2754/pizzahut2/css/fonts/AvenirLTStd-Black.ttf') format('truetype'), url('http://rmarepo.richmediaads.com/2754/pizzahut2/css/fonts/AvenirLTStd-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'H.H.Samuel';
+    src: url('http://rmarepo.richmediaads.com/2754/pizzahut2/css/fonts/H.H.Samuel.eot');
+    src: url('http://rmarepo.richmediaads.com/2754/pizzahut2/css/fonts/H.H.Samuel.woff') format('woff'), url('http://rmarepo.richmediaads.com/2754/pizzahut2/css/fonts/H.H.Samuel.ttf') format('truetype'), url('http://rmarepo.richmediaads.com/2754/pizzahut2/css/fonts/H.H.Samuel.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
